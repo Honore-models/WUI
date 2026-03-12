@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(229, 231, 228);
+        }
+        select{
+           background-color: rgb(176, 209, 253);
+            border: 2px solid green;
+             width: 15rem;
+            height: 2rem;
+            border-radius: 6px;
+        }
+
+
+        input[type="text"],input[type="email"],input[type="password"] {
+            background-color: rgb(176, 209, 253);
+            border: 2px solid green;
+             width: 15rem;
+            height: 2rem;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: rgb(49, 81, 241);
+            width: 15rem;
+            height: 2rem;
+            border: 2px solid green;
+            border-radius: 6px;
+        }
+
+        textarea {
+            background-color: rgb(133, 207, 253);
+            border: 2px solid green;
+            border-radius: 4px;
+        }
+        table,th,td{
+            border: 2px solid rgb(128, 79, 0);
+            border-collapse:collapse;
+            padding: 1.2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sectors in Western Province</h1>
+    <ol>
+        <li>KARONGI
+            <ol type="i">
+                <li>Bwishyura</li>
+                <li>GITESI</li>
+                <li>MUBUGA</li>
+            </ol>
+        </li>
+
+
+        <li> NYABIHU
+            <ol type="i">
+                <li>GIGOGWE</li>
+                <li>KARAGO</li>
+                <li>JENDA</li>
+            </ol>
+        </li>
+
+        <li>RUTSIRO
+            <ol type="i">
+                <li>BONEZA</li>
+                <li>KARAGO</li>
+                <li>JENDA</li>
+            </ol>
+        </li>
+
+    </ol>
+    <hr>
+    <h2>Student Access Inqury</h2>
+
+    <form action="#" method="post">
+        <label for="name">First Name</label><br>
+        <input type="text" name="name" id="name"><br>
+        <br>
+        <label for="nick">Last Name</label><br>
+        <input type="text" name="nick" id="nick"><br>
+        <br>
+        <label for="non">Email</label><br>
+        <input type="email" name="non" id="non"><br>
+        <br>
+        <label for="">Gender</label><br>
+        <input type="radio" name="radi" id="radi" value="kk">
+        <label for="radi">Male</label><br>
+        <input type="radio" name="radi" id="hon">
+        <label for="hon">Female</label><br>
+
+        <h2>Spoken Languages</h2>
+
+        <input type="checkbox" name="box" id="box">
+        <label for="box">Kinyarwanda</label><br>
+        <input type="checkbox" name="bo" id="bo">
+        <label for="bo">Kiswahili</label><br>
+        <input type="checkbox" name="bb" id="bb">
+        <label for="bb">English</label><br>
+        <input type="checkbox" name="boxx" id="boxx">
+        <label for="boxx">French</label><br>
+        <br>
+        <section>
+            <label for="lev">Level</label><br>
+            <input type="text" name="lev" id="lev" placeholder="Senior 1"><br>
+            <br>
+            <label for="pass">Password</label><br>
+            <input type="password" id="pass" name="pass"><br>
+            <br>
+            <label for="text">Request</label><br>
+            <textarea name="text" id="text" placeholder="Write here" cols="30" rows="5"></textarea><br>
+
+            <label for="">Choose your best type</label>
+
+            <select name="sel" id="sel">
+                <option value="Audi">Audi</option>
+                <option value="Benz">Benz</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Ferrali">Ferrali</option>
+            </select><br><br>
+
+            <label for="">Browse</label>
+            <input type="file" id="file" name="file">
+
+            <button type="button">Submit</button>
+
+           
+
+
+</form><hr>
+
+<h2>My table</h2>
+
+<table>
+    <tr><th rowspan="2">Cell</th><th colspan="2">0-15</th><th colspan="2">16-25</th><th colspan="2">26-35</th><th colspan="2">36-45</th><th colspan="2">46-55</th><th colspan="2">56-ab</th></tr>
+    <tr><th>Men</th><th>Women</th><th>Men</th><th>Women</th><th>Men</th><th>Women</th><th>Men</th><th>Women</th><th>Men</th><th>Women</th><th>Men</th><th>Women</th></tr>
+    <tr><td>A</td><td>800</td><td>700</td><td>800</td><td>700</td><td>800</td><td>700</td><td>800</td><td>700</td><td>800</td><td>700</td><td>800</td><td>700</td></tr>
+
+</table>
+
+
+</body>
+
+</html>

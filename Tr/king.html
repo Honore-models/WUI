@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic Elements Demo</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: grid;
+      grid-template-columns: 3fr 1fr; /*Here we create 4 parts and then the first 3 parts go on the first column and then the rest part go on the last colimn BUT remember that header and footer is not affected bu this SO in this codes we are haveing <MAIN> in the first column (3fr) and  <ASIDE> in the third column ... WE SPLIT ACCORDING ON THE DIRECT CHILDRENS OF THE SELECTED ELEMENT (Here the element is body that's why main and aside)*/
+      gap: 25px; /* Space between columns*/
+    }
+
+    header, nav, section, article, aside, footer {
+      padding: 15px;
+      border: 1px solid #0c5df4;
+    }
+
+    header {
+      grid-column: 1 / -1; /*This is to enforce the header to span the whole width on top of the columns (1/-1) means from start => end of the column*/
+      background: #333;
+      color: white;
+    }
+
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: white;
+      
+    }
+
+    main {
+      padding: 20px;
+      background-color: #9bdb7f;
+    }
+
+    aside {
+      background: #8febf7;
+    }
+
+    footer {
+      grid-column: 1 / -1; /*Same on the footer*/
+      background: #e156f3;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>My Blog(Header)</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Articles</a>
+      <a href="#">Contact (nav)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Technology(Section)</h2>
+
+      <article>
+        <h3>What is HTML?(article)</h3>
+        <p>HTML is the standard language used to create web pages.</p>
+
+        <details>
+          <summary>Read more(Details)</summary>
+          <p>HTML (HyperText Markup Language): HTML is the standard markup language used for creating the structure and content of web pages. It provides a way to describe different types of content, such as headings, paragraphs, lists, links, images, and multimedia, using tags or elements. HTML defines the semantic meaning of content, helping browsers, search engines, and assistive technologies understand the purpose of each part of a webpage. Essentially, HTML forms the skeleton of a website, organizing content into sections, articles, headers, footers, and other meaningful blocks.</p>
+        </details>
+      </article>
+
+      <article>
+        <h3>What is CSS?</h3>
+        <p>CSS is used to style and layout web pages.</p>
+        <details>
+            <summary>Read more(Details)</summary>
+            <p>CSS (Cascading Style Sheets): CSS is the style sheet language used to control the presentation and layout of HTML content on a web page. It allows developers to set colors, fonts, spacing, positioning, and visual effects, as well as create complex layouts like grids and flexbox-based designs. CSS separates the appearance from the structure, enabling a consistent and maintainable design across multiple pages. By using CSS, web developers can make pages visually appealing, responsive to different screen sizes, and interactive, while HTML remains focused on content and structure.</p>
+        </details>
+      </article>
+    </section>
+  </main>
+
+  <aside>
+    <h3>Related Links    (aside)</h3>
+    <p>HTML Tutorial</p>
+    <p>CSS Guide</p>
+  </aside>
+
+  <footer>
+    <p>&copy; 2025 My Blog(Footer)</p>
+  </footer>
+
+</body>
+</html>

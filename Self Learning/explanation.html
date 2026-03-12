@@ -1,0 +1,89 @@
+<!--
+Whenever you want to apply in line css you must put it inside the style attribute of the element that you wan t to style  
+Ex <h1  style="background-color: green;"></h1>
+
+--------------------------------------------------------------------------------------------------------------
+You can use multiple font-families in css
+
+A font is “available” only if it’s installed on the system or successfully loaded by your website.
+The browser reads fonts from left to right , if one is not available then the browser uses another 
+
+Fonts with spaces or special characters need quotes.
+Fonts without them don’t.
+
+Types of fonts: 
+
+- font-family
+- font-style
+- font-size: The normal font sixe is 400px
+- font-weight
+
+UNITS: 
+
+1️⃣ Pixels (px)
+A pixel (short for picture element) is the smallest unit of a digital image or screen.
+
+2️⃣ em (relative to parent)
+What it means: Relative to the font-size of the parent element.
+Behavior: Scales based on parent.
+
+body {
+  font-size: 16px;
+}
+h1 {
+  font-size: 2em; ==>  2 × 16px = 32px 
+}
+
+3️⃣ rem (relative to root) The root is usually 16px
+
+What it means: Relative to the root <html> font-size (usually 16px unless changed).
+Behavior: Always scales relative to root, not parent
+
+html {
+  font-size: 16px;
+}
+p {
+  font-size: 1rem; /* 1 × 16px = 16px */
+}
+
+4️⃣ % (percentage of parent)
+
+What it means: Relative to parent element’s font-size.
+Behavior: Similar to em but expressed as a percentage.
+
+body {
+  font-size: 16px;
+}
+p {
+  font-size: 125%; /* 125% of 16px = 20px */
+}
+
+100% = same as parent font-size
+Less than 100% = smaller
+More than 100% = bigger
+
+TEXT DECORATION : It is used to decorate a text by adding or removing line.
+Line: underline, overline, line-through
+Style: solid, dashed, dotted, wavy
+Color: any CSS color
+
+Shorthand order= “line → style → color”
+
+BACK GROUND STYLING
+
+LINEAR GRADIENT:
+
+A linear-gradient is a gradual transition between two or more colors along a straight line.
+background: linear-gradient(direction, color1, color2, ...);
+
+background-repeat: no-repeat; Is used whenever we have a repeating design in the background we dont want
+It sometimes goes with (backgroung-attachment: fixed) to make that repeating to fit the entire screen
+
+background-attachment: fixed
+background-size: cover
+background-position: center
+
+padding is the space between border and inner
+margin is the space between the bprder and outer 
+
+-->

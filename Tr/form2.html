@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 style="color: rgb(25, 131, 14);">Sign Up</h2>
+
+    <div><h4>The div &lt;tag&gt; is a generic container &hearts;</h4></div>
+
+    <form enctype="multipart/form-data">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name" title="Enter only letters, at least 3 characters">User name</label>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,50}" required><br><br>
+            <label for="date">Date of Birth:</label>
+            <input type="date" id="date" name="date"><br><br>
+
+            <select name="nationarity" id="nationarity" multiple>
+                <option value="">Select Nationality</option>
+                <option value="rwanda">Rwanda</option>
+                <option value="Uganda">Uganda</option>
+                <option value="kenya">Kenya</option>
+                <option value="usa">USA</option>
+                <option value="usa">France</option>
+                <option value="usa">Burundi</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Additional Information</legend>
+            <input type="file" name="file" id="file"><br><br>
+
+            <label for="color">Favorite Color:</label>
+            <input type="color" name="color" id="color"><br><br>
+
+            <input type="submit" value="Signup">
+            <input type="reset" value="Clear">
+
+        </fieldset>
+        <figure>
+            <img src="ironman.jpg" alt="ironman" height="200" width="300">
+            <figcaption>This is iron man</figcaption>
+        </figure>
+
+    </form>
+
+</body>
+
+</html>
