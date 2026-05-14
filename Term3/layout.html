@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #header {
+        width: 100%;
+        min-height: 10vh;
+        background-color: skyblue;
+      }
+      #leftsidebar {
+        width: 20%;
+        min-height: 80vh;
+        background-color: gray;
+      }
+      #rightsidebar {
+        width: 20%;
+        min-height: 80vh;
+        background-color: orange;
+        float: right;
+      }
+      #middle {
+        width: 60%;
+        min-height: 80vh;
+        background-color: rgb(61, 61, 135);
+      }
+      #footer {
+        width: 100%;
+        min-height: 10vh;
+        background-color: greenyellow;
+        clear: left;
+      }
+
+      #rightsidebar,
+      #middle {
+        float: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main"></div>
+    <div id="header">Header</div>
+    <div id="leftsidebar">Leftsidebar</div>
+    <div id="middle">middle</div>
+    <div id="rightsidebar">rightsidebar</div>
+    <div id="footer">Footer</div>
+  </body>
+</html>
