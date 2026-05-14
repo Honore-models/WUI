@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouTube Layout Only</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: #f3f3f3;
+        font-family: Arial, sans-serif;
+        padding: 12px;
+      }
+      .page {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .topbar {
+        width: 100%;
+        height: 132px;
+        background: #ffffff;
+        border: 1px solid #dddddd;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        padding: 0 36px;
+      }
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        color: #111111;
+        font-size: 34px;
+        font-weight: 700;
+        flex: 0 0 auto;
+      }
+      .youtube-icon {
+        width: 76px;
+        height: 52px;
+        background: #c10202;
+        border-radius: 12px;
+        position: relative;
+      }
+      .youtube-icon::before {
+        content: "";
+        position: absolute;
+        top: 14px;
+        left: 30px;
+        width: 0;
+        height: 0;
+        border-top: 12px solid transparent;
+        border-bottom: 12px solid transparent;
+        border-left: 19px solid #ffffff;
+      }
+      .top-search {
+        height: 44px;
+        flex: 0 1 620px;
+        border-radius: 22px;
+        background: #eeeeee;
+        border: 1px solid #d8d8d8;
+      }
+      .top-circle {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: #d0d0d0;
+        flex: 0 0 auto;
+      }
+      .content {
+        display: flex;
+        gap: 14px;
+        min-height: calc(100vh - 170px);
+      }
+      .sidebar {
+        width: 19%;
+        min-width: 220px;
+        background: #000000;
+      }
+      .main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+      .category-strip {
+        height: 74px;
+        background: #e2e2e2;
+      }
+      .video-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px 16px;
+      }
+      .video-card {
+        flex: 0 0 calc((100% - 48px) / 4);
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .thumb {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background: #edb5b5;
+      }
+      .meta {
+        display: flex;
+        gap: 12px;
+        align-items: flex-start;
+        padding-bottom: 6px;
+      }
+      .avatar {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: #d0d0d0;
+        flex: 0 0 56px;
+      }
+      .lines {
+        flex: 1;
+        padding-top: 4px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .line {
+        height: 16px;
+        background: #d0d0d0;
+      }
+      .line.long {
+        width: 72%;
+      }
+      .line.short {
+        width: 62%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <div class="brand">
+          <span>YouTube</span>
+        </div>
+        <div class="top-search"></div>
+        <div class="top-circle"></div>
+      </header>
+      <div class="content">
+        <aside class="sidebar"></aside>
+        <main class="main">
+          <div class="category-strip"></div>
+          <section class="video-list" aria-label="Video placeholder layout">
+            <article class="video-card">
+              <div class="thumb"></div>
+              <div class="meta">
+                <div class="avatar"></div>
+                <div class="lines">
+                  <div class="line long"></div>
+                  <div class="line short"></div>
+                </div>
+              </div>
+            </article>
+            <article class="video-card">
+              <div class="thumb"></div>
+              <div class="meta">
+                <div class="avatar"></div>
+                <div class="lines">
+                  <div class="line long"></div>
+                  <div class="line short"></div>
+                </div>
+              </div>
+            </article>
+            <article class="video-card">
+              <div class="thumb"></div>
+              <div class="meta">
+                <div class="avatar"></div>
+                <div class="lines">
+                  <div class="line long"></div>
+                  <div class="line short"></div>
+                </div>
+              </div>
+            </article>
+            <article class="video-card">
+              <div class="thumb"></div>
+              <div class="meta">
+                <div class="avatar"></div>
+                <div class="lines">
+                  <div class="line long"></div>
+                  <div class="line short"></div>
+                </div>
+              </div>
+            </article>
+            <article class="video-card">
+              <div class="thumb"></div>
+              <div class="meta">
+                <div class="avatar"></div>
+                <div class="lines">
+                  <div class="line long"></div>
+                  <div class="line short"></div>
+                </div>
+              </div>
+            </article>
+            <article class="video-card">
+              <div class="thumb"></div>
+              <div class="meta">
+                <div class="avatar"></div>
+                <div class="lines">
+                  <div class="line long"></div>
+                  <div class="line short"></div>
+                </div>
+              </div>
+            </article>
+            <article class="video-card">
+              <div class="thumb"></div>
+              <div class="meta">
+                <div class="avatar"></div>
+                <div class="lines">
+                  <div class="line long"></div>
+                  <div class="line short"></div>
+                </div>
+              </div>
+            </article>
+            <article class="video-card">
+              <div class="thumb"></div>
+              <div class="meta">
+                <div class="avatar"></div>
+                <div class="lines">
+                  <div class="line long"></div>
+                  <div class="line short"></div>
+                </div>
+              </div>
+            </article>
+            <article class="video-card">
+              <div class="thumb"></div>
+              <div class="meta">
+                <div class="avatar"></div>
+                <div class="lines">
+                  <div class="line long"></div>
+                  <div class="line short"></div>
+                </div>
+              </div>
+            </article>
+            <article class="video-card">
+              <div class="thumb"></div>
+              <div class="meta">
+                <div class="avatar"></div>
+                <div class="lines">
+                  <div class="line long"></div>
+                  <div class="line short"></div>
+                </div>
+              </div>
+            </article>
+            <article class="video-card">
+              <div class="thumb"></div>
+              <div class="meta">
+                <div class="avatar"></div>
+                <div class="lines">
+                  <div class="line long"></div>
+                  <div class="line short"></div>
+                </div>
+              </div>
+            </article>
+            <article class="video-card">
+              <div class="thumb"></div>
+              <div class="meta">
+                <div class="avatar"></div>
+                <div class="lines">
+                  <div class="line long"></div>
+                  <div class="line short"></div>
+                </div>
+              </div>
+            </article>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
