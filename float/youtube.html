@@ -13,7 +13,6 @@
       body {
         background: #f3f3f3;
         font-family: Arial, sans-serif;
-        padding: 12px;
       }
       .page {
         width: 100%;
@@ -23,60 +22,286 @@
       }
       .topbar {
         width: 100%;
-        height: 132px;
-        background: #ffffff;
-        border: 1px solid #dddddd;
+        height: 84px;
+        background: #0f0f0f;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 30px;
-        padding: 0 36px;
+        gap: 26px;
+        padding: 0 38px 0 42px;
+      }
+      .left-actions,
+      .right-actions {
+        display: flex;
+        align-items: center;
+        flex: 0 0 auto;
+      }
+      .left-actions {
+        gap: 42px;
+      }
+      .right-actions {
+        gap: 24px;
+      }
+      .menu-button,
+      .icon-button,
+      .create-button,
+      .profile-button {
+        border: 0;
+        cursor: default;
+        flex: 0 0 auto;
+      }
+      .menu-button {
+        width: 28px;
+        height: 24px;
+        background: transparent;
+        position: relative;
+      }
+      .menu-button::before,
+      .menu-button::after,
+      .menu-line {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 28px;
+        height: 4px;
+        border-radius: 999px;
+        background: #f1f1f1;
+      }
+      .menu-button::before {
+        top: 0;
+      }
+      .menu-line {
+        top: 10px;
+      }
+      .menu-button::after {
+        bottom: 0;
       }
       .brand {
         display: flex;
         align-items: center;
-        gap: 14px;
-        color: #111111;
-        font-size: 34px;
+        gap: 7px;
+        color: #ffffff;
+        font-size: 35px;
         font-weight: 700;
+        letter-spacing: -1.5px;
         flex: 0 0 auto;
       }
       .youtube-icon {
-        width: 76px;
-        height: 52px;
-        background: #c10202;
-        border-radius: 12px;
+        width: 44px;
+        height: 31px;
+        background: #ff0033;
+        border-radius: 8px;
         position: relative;
       }
       .youtube-icon::before {
         content: "";
         position: absolute;
-        top: 14px;
-        left: 30px;
+        top: 8px;
+        left: 17px;
         width: 0;
         height: 0;
-        border-top: 12px solid transparent;
-        border-bottom: 12px solid transparent;
-        border-left: 19px solid #ffffff;
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+        border-left: 12px solid #ffffff;
       }
-      .top-search {
-        height: 44px;
-        flex: 0 1 620px;
-        border-radius: 22px;
-        background: #eeeeee;
-        border: 1px solid #d8d8d8;
+      .search-area {
+        height: 62px;
+        flex: 1 1 940px;
+        max-width: 940px;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
       }
-      .top-circle {
-        width: 56px;
-        height: 56px;
+      .search-box {
+        height: 62px;
+        flex: 1;
+        border: 1px solid #303030;
+        border-right: 0;
+        border-radius: 31px 0 0 31px;
+        background: #121212;
+        color: #9ca3af;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        padding: 0 26px;
+      }
+      .search-submit {
+        width: 98px;
+        height: 62px;
+        border: 1px solid #303030;
+        border-radius: 0 31px 31px 0;
+        background: #222222;
+        position: relative;
+      }
+      .search-submit::before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 34px;
+        width: 22px;
+        height: 22px;
+        border: 4px solid #f1f1f1;
         border-radius: 50%;
-        background: #d0d0d0;
-        flex: 0 0 auto;
+      }
+      .search-submit::after {
+        content: "";
+        position: absolute;
+        top: 39px;
+        left: 58px;
+        width: 15px;
+        height: 4px;
+        border-radius: 999px;
+        background: #f1f1f1;
+        transform: rotate(45deg);
+        transform-origin: left center;
+      }
+      .icon-button {
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        background: #222222;
+        position: relative;
+      }
+      .mic-button::before {
+        content: "";
+        position: absolute;
+        top: 14px;
+        left: 24px;
+        width: 14px;
+        height: 25px;
+        border: 4px solid #f1f1f1;
+        border-radius: 12px;
+      }
+      .mic-button::after {
+        content: "";
+        position: absolute;
+        left: 19px;
+        top: 36px;
+        width: 24px;
+        height: 17px;
+        border: 4px solid #f1f1f1;
+        border-top: 0;
+        border-radius: 0 0 18px 18px;
+      }
+      .mic-stem {
+        position: absolute;
+        left: 29px;
+        top: 52px;
+        width: 4px;
+        height: 8px;
+        border-radius: 999px;
+        background: #f1f1f1;
+      }
+      .create-button {
+        height: 56px;
+        min-width: 151px;
+        padding: 0 18px 0 23px;
+        border-radius: 28px;
+        background: #272727;
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+      .plus-icon {
+        width: 28px;
+        height: 28px;
+        position: relative;
+      }
+      .plus-icon::before,
+      .plus-icon::after {
+        content: "";
+        position: absolute;
+        background: #ffffff;
+        border-radius: 999px;
+      }
+      .plus-icon::before {
+        top: 12px;
+        left: 0;
+        width: 28px;
+        height: 4px;
+      }
+      .plus-icon::after {
+        top: 0;
+        left: 12px;
+        width: 4px;
+        height: 28px;
+      }
+      .bell-button {
+        width: 44px;
+        height: 44px;
+        background: transparent;
+        position: relative;
+      }
+      .bell-button::before {
+        content: "";
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        width: 22px;
+        height: 25px;
+        border: 4px solid #f1f1f1;
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px;
+        border-bottom: 0;
+      }
+      .bell-button::after {
+        content: "";
+        position: absolute;
+        left: 4px;
+        top: 31px;
+        width: 34px;
+        height: 4px;
+        border-radius: 999px;
+        background: #f1f1f1;
+      }
+      .bell-clapper {
+        position: absolute;
+        left: 19px;
+        top: 37px;
+        width: 8px;
+        height: 5px;
+        border-radius: 0 0 8px 8px;
+        background: #f1f1f1;
+      }
+      .notification-count {
+        position: absolute;
+        top: -7px;
+        right: -14px;
+        min-width: 34px;
+        height: 26px;
+        padding: 0 7px;
+        border-radius: 999px;
+        background: #e1002d;
+        border: 2px solid #0f0f0f;
+        color: #ffffff;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 22px;
+        text-align: center;
+      }
+      .profile-button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        background:
+          radial-gradient(circle at 50% 24%, #1f2937 0 9%, transparent 10%),
+          linear-gradient(
+            115deg,
+            transparent 0 43%,
+            #6f7f90 44% 68%,
+            transparent 69%
+          ),
+          linear-gradient(#d9e2ef 0 46%, #b9c8d8 47% 100%);
       }
       .content {
         display: flex;
         gap: 14px;
-        min-height: calc(100vh - 170px);
+        min-height: calc(100vh - 98px);
+        padding: 14px 12px 12px;
       }
       .sidebar {
         width: 19%;
@@ -140,16 +365,65 @@
       .line.short {
         width: 62%;
       }
+      @media (max-width: 1000px) {
+        .topbar {
+          gap: 16px;
+          padding: 0 18px;
+        }
+        .left-actions {
+          gap: 18px;
+        }
+        .right-actions {
+          gap: 12px;
+        }
+        .brand {
+          font-size: 28px;
+        }
+        .search-area {
+          min-width: 240px;
+        }
+        .create-button span:last-child {
+          display: none;
+        }
+        .create-button {
+          min-width: 56px;
+          width: 56px;
+          padding: 0;
+          justify-content: center;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="page">
       <header class="topbar">
-        <div class="brand">
-          <span>YouTube</span>
+        <div class="left-actions">
+          <button class="menu-button" aria-label="Open navigation">
+            <span class="menu-line"></span>
+          </button>
+          <div class="brand" aria-label="YouTube">
+            <div class="youtube-icon" aria-hidden="true"></div>
+            <span>YouTube</span>
+          </div>
         </div>
-        <div class="top-search"></div>
-        <div class="top-circle"></div>
+        <div class="search-area" role="search">
+          <div class="search-box">Search</div>
+          <button class="search-submit" aria-label="Search"></button>
+        </div>
+        <!-- <div class="right-actions">
+          <button class="icon-button mic-button" aria-label="Search with your voice">
+            <span class="mic-stem"></span>
+          </button>
+          <button class="create-button" aria-label="Create">
+            <span class="plus-icon" aria-hidden="true"></span>
+            <span>Create</span>
+          </button>
+          <button class="bell-button" aria-label="Notifications">
+            <span class="bell-clapper"></span>
+            <span class="notification-count">9+</span>
+          </button>
+          <button class="profile-button" aria-label="Account"></button>
+        </div> -->
       </header>
       <div class="content">
         <aside class="sidebar"></aside>
