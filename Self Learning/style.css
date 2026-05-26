@@ -183,7 +183,7 @@ body {
 }
 
 .list-page ul li::before {
-  content: "◆ ";
+  content: "◆";
   color: #4a90e2;
   font-size: 11px;
 }
