@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Multi-level Dropdown</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: system-ui, Arial, sans-serif;
+        padding: 40px;
+        background: #fff;
+      }
+
+      /* Top tabs */
+      .tabs {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 18px;
+      }
+      .tab {
+        padding: 10px 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 600;
+      }
+      .tab.popular {
+        background: #d4eef4;
+        color: #2d5668;
+      }
+      .tab.recent {
+        background: #f6c85f;
+        color: #7a4b08;
+      }
+      .tab.category {
+        background: #f6c85f;
+        color: #7a4b08;
+      }
+
+      /* Menu basics */
+      .menu-wrap {
+        position: relative;
+      }
+      .menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 220px;
+      }
+      .menu li {
+        position: relative;
+        margin: 0;
+      }
+
+      /* Labels act as the clickable/menu items */
+      .menu-label {
+        display: block;
+        padding: 12px 14px;
+        background: #e9f7fb;
+        border: 1px solid #d7eef4;
+        color: #1f3b44;
+        cursor: pointer;
+        position: relative;
+      }
+
+      /* Remove double borders between stacked items */
+      .menu li + li .menu-label {
+        border-top: none;
+      }
+
+      /* arrow for items with submenu */
+      .menu li.has-sub > .menu-label::after {
+        content: "\00bb";
+        position: absolute;
+        right: 10px;
+        color: #2f6b84;
+      }
+
+      /* hide the native checkbox toggle */
+      .toggle {
+        position: absolute;
+        left: -9999px;
+      }
+
+      /* submenus are positioned to the right */
+      .menu li > ul {
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        left: 230px;
+        top: 0;
+        width: 220px;
+      }
+      .menu li > ul li > .menu-label {
+        background: #f1f7fb;
+        border: 1px solid #dfeef4;
+      }
+
+      /* level 3 */
+      .menu li > ul li > ul {
+        display: none;
+        position: absolute;
+        left: 230px;
+        top: 0;
+        width: 200px;
+      }
+
+      /* Show submenu on hover, focus-within, or when toggle is checked */
+      .menu li:hover > ul,
+      .menu li:focus-within > ul,
+      .menu li > .toggle:checked + ul {
+        display: block;
+      }
+
+      /* subtle shadow */
+      .menu-label,
+      .menu li > ul li > .menu-label {
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
+      }
+
+      @media (hover: hover) {
+        .menu-label:hover {
+          background: #dff3f9;
+        }
+      }
+
+      .muted {
+        color: #4b646f;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="tabs" aria-label="Categories">
+      <div class="tab popular">Popular Toys</div>
+      <div class="tab recent">Recent Toys</div>
+      <div class="tab category">Toys Category</div>
+    </nav>
+
+    <div class="menu-wrap">
+      <ul class="menu" role="menu">
+        <li>
+          <label class="menu-label">Video Games</label>
+        </li>
+        <li>
+          <label class="menu-label">Barbies</label>
+        </li>
+        <li>
+          <label class="menu-label">Teddy Bear</label>
+        </li>
+
+        <li class="has-sub">
+          <label class="menu-label" for="t1">Level 1</label>
+          <input id="t1" class="toggle" type="checkbox" aria-hidden="true" />
+          <ul role="menu">
+            <li class="has-sub">
+              <label class="menu-label" for="t1-1">Level 2 - Menu 1</label>
+              <input
+                id="t1-1"
+                class="toggle"
+                type="checkbox"
+                aria-hidden="true"
+              />
+              <ul role="menu">
+                <li><label class="menu-label">Level 3 - Menu 1</label></li>
+                <li><label class="menu-label">Level 3 - Menu 2</label></li>
+              </ul>
+            </li>
+            <li><label class="menu-label">Level 2 - Menu 2</label></li>
+            <li><label class="menu-label">Level 2 - Menu 3</label></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
