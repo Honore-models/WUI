@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout Example</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        min-height: 100vh;
+        background: #f3f3f3;
+      }
+
+      .container {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        gap: 10px;
+        min-height: 100vh;
+        padding: 10px;
+      }
+
+      .header,
+      .footer,
+      .content,
+      .sidebar {
+        border-radius: 10px;
+      }
+
+      .header {
+        background: #7fcf7f;
+        min-height: 70px;
+      }
+
+      .main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+      }
+
+      .content {
+        background: #f7e3a6;
+        min-height: 320px;
+      }
+
+      .sidebar {
+        background: #f59393;
+        min-height: 320px;
+      }
+
+      .footer {
+        background: #4f99e1;
+        min-height: 60px;
+      }
+
+      .box {
+        padding: 20px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header box">
+        <h1>Header</h1>
+      </header>
+
+      <section class="main">
+        <article class="content box">
+          <h2>Main Content</h2>
+          <p>This area represents the large left section.</p>
+        </article>
+        <aside class="sidebar box">
+          <h2>Sidebar</h2>
+          <p>This area represents the right section.</p>
+        </aside>
+      </section>
+
+      <footer class="footer box">
+        <p>Footer</p>
+      </footer>
+    </div>
+  </body>
+</html>
