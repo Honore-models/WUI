@@ -189,10 +189,10 @@
         font-size: 16px;
       }
 
-      .avatar {
+      .profile {
         width: 34px;
         height: 34px;
-        border-radius: 50%;
+        border-radius: 100%;
         background: #c8d6ea;
         border: 2px solid #d0d5dd;
         display: flex;
