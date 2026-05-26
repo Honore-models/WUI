@@ -112,6 +112,11 @@
       .nav-sub-item.active .nav-bullet {
         background: #003580;
       }
+      .profile img {
+        border-radius: 100%;
+        height: 32px;
+        width: 35px;
+      }
 
       .logout {
         display: flex;
