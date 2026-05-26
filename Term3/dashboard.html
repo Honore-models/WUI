@@ -3,156 +3,171 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
     <link rel="stylesheet" href="dashboard.css" />
+    <title>Cloud3 3 Dashboard</title>
+    <style></style>
   </head>
   <body>
-    <div class="app">
-      <aside class="sidebar">
-        <div class="logo-box">
-          <div class="logo">C</div>
-          <span class="logo-text">Cloud3</span>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">&#x221E;</div>
+        <div class="brand-name">Cloud3</div>
+      </div>
+
+      <nav class="nav">
+        <div class="nav-item active">
+          <span class="nav-icon">&#9783;</span>
+          Dashboard
         </div>
+        <div class="nav-item">
+          <span class="nav-icon">&#128257;</span>
+          Shared
+        </div>
+        <div class="nav-item">
+          <span class="nav-icon">&#9733;</span>
+          Starred
+        </div>
+        <div class="nav-item">
+          <span class="nav-icon">&#128465;</span>
+          Deleted
+        </div>
+      </nav>
 
-        <ul class="sidebar-menu">
-          <li class="sidebar-item active">
-            <span class="sidebar-icon">▧</span>
-            Dashboard
-          </li>
-          <li class="sidebar-item">
-            <span class="sidebar-icon">⤻</span>
-            Shared
-          </li>
-          <li class="sidebar-item">
-            <span class="sidebar-icon">⭐</span>
-            Starred
-          </li>
-          <li class="sidebar-item">
-            <span class="sidebar-icon">🗑️</span>
-            Deleted
-          </li>
-        </ul>
+      <div class="sidebar-bottom">
+        <div class="collapse-btn">
+          <span>&#8592;</span>
+          Collapse
+        </div>
+      </div>
+    </aside>
 
-        <div class="sidebar-footer">⟵ Collapse</div>
-      </aside>
+    <!-- MAIN -->
+    <div class="main">
+      <!-- TOPBAR -->
+      <div class="topbar">
+        <div class="search-wrap">
+          <span>&#128269;</span>
+          <input type="text" placeholder="Search" />
+        </div>
+        <button class="filter-btn">&#9776;</button>
+      </div>
 
-      <main class="main-content">
-        <div class="top-row">
-          <div class="search-box">
-            <span class="search-icon">🔍</span>
-            <input type="text" placeholder="Search" />
+      <!-- CONTENT -->
+      <div class="content">
+        <!-- CATEGORY -->
+        <div class="section-title">Category</div>
+        <div class="category-grid">
+          <div class="cat-card">
+            <div class="cat-icon purple">&#128247;</div>
+            <div class="cat-name">Images</div>
+            <div class="cat-count">437 files</div>
           </div>
-          <div class="filter-box">≡</div>
+          <div class="cat-card">
+            <div class="cat-icon blue">&#128196;</div>
+            <div class="cat-name">Documents</div>
+            <div class="cat-count">212 files</div>
+          </div>
+          <div class="cat-card">
+            <div class="cat-icon yellow">&#127925;</div>
+            <div class="cat-name">Audio</div>
+            <div class="cat-count">98 files</div>
+          </div>
+          <div class="cat-card">
+            <div class="cat-icon green">&#127909;</div>
+            <div class="cat-name">Videos</div>
+            <div class="cat-count">560 files</div>
+          </div>
         </div>
 
-        <div class="content-grid">
-          <section class="category-panel">
-            <div class="section-header">
-              <div>
-                <p class="section-title">Category</p>
-              </div>
-            </div>
-            <div class="category-cards">
-              <div class="category-card">
-                <div class="category-icon">🖼</div>
-                <p class="category-title">Images</p>
-                <p class="category-count">437 files</p>
-              </div>
-              <div class="category-card">
-                <div class="category-icon">📄</div>
-                <p class="category-title">Documents</p>
-                <p class="category-count">212 files</p>
-              </div>
-              <div class="category-card">
-                <div class="category-icon">🎵</div>
-                <p class="category-title">Audio</p>
-                <p class="category-count">98 files</p>
-              </div>
-              <div class="category-card">
-                <div class="category-icon">🎬</div>
-                <p class="category-title">Videos</p>
-                <p class="category-count">560 files</p>
-              </div>
-            </div>
-
-            <div class="recent-panel">
-              <p class="section-title">Recent</p>
-              <ul class="recent-list">
-                <li>
-                  <span class="file-icon doc">📄</span>
-                  <div class="file-details">
-                    <span class="file-name">My Report.docx</span>
-                    <span class="file-type">DOCX File</span>
-                  </div>
-                  <span class="file-size">7 MB</span>
-                  <span class="file-menu">⋯</span>
-                </li>
-                <li>
-                  <span class="file-icon audio">🎵</span>
-                  <div class="file-details">
-                    <span class="file-name">Backsound.mp3</span>
-                    <span class="file-type">MP3 File</span>
-                  </div>
-                  <span class="file-size">7 MB</span>
-                  <span class="file-menu">⋯</span>
-                </li>
-                <li>
-                  <span class="file-icon img">🖼</span>
-                  <div class="file-details">
-                    <span class="file-name">Artboard-1.png</span>
-                    <span class="file-type">PNG File</span>
-                  </div>
-                  <span class="file-size">7 MB</span>
-                  <span class="file-menu">⋯</span>
-                </li>
-                <li>
-                  <span class="file-icon video">🎥</span>
-                  <div class="file-details">
-                    <span class="file-name">Final Present.mp4</span>
-                    <span class="file-type">MP4 File</span>
-                  </div>
-                  <span class="file-size">7 MB</span>
-                  <span class="file-menu">⋯</span>
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          <aside class="right-panel">
-            <div class="profile-card">
-              <div class="avatar">RF</div>
-              <div class="profile-info">
-                <p class="profile-name">Robert Fox</p>
-                <p class="profile-email">robert@mail.com</p>
-              </div>
-              <div class="profile-arrow">▾</div>
-            </div>
-
-            <button class="add-button">
-              +
-              <span>Add new</span>
-            </button>
-
-            <div class="storage-card">
-              <div class="storage-ring">25%</div>
-              <div class="storage-text">
-                <p class="storage-value">769 GB / 1 TB</p>
-                <p class="storage-sub">Available storage</p>
-              </div>
-            </div>
-
-            <div class="premium-card">
-              <div class="premium-icon">📁</div>
-              <div>
-                <p class="premium-title">Go Premium</p>
-                <p class="premium-desc">
-                  Upgrade space now and get a 15% discount
-                </p>
-              </div>
-            </div>
-          </aside>
+        <!-- RECENT -->
+        <div class="section-title">Recent</div>
+        <div class="recent-list">
+          <div class="file-row">
+            <div class="file-icon blue">&#128196;</div>
+            <div class="file-name">My Report.docx</div>
+            <div class="file-type">DOCX File</div>
+            <div class="file-size">7 MB</div>
+            <div class="file-menu">&#8230;</div>
+          </div>
+          <div class="file-row">
+            <div class="file-icon yellow">&#127925;</div>
+            <div class="file-name">Backsound.mp3</div>
+            <div class="file-type">MP3 File</div>
+            <div class="file-size">7 MB</div>
+            <div class="file-menu">&#8230;</div>
+          </div>
+          <div class="file-row">
+            <div class="file-icon red">&#128247;</div>
+            <div class="file-name">Artboard-1.png</div>
+            <div class="file-type">PNG File</div>
+            <div class="file-size">7 MB</div>
+            <div class="file-menu">&#8230;</div>
+          </div>
+          <div class="file-row">
+            <div class="file-icon green">&#127909;</div>
+            <div class="file-name">Final Present.mp4</div>
+            <div class="file-type">MP4 File</div>
+            <div class="file-size">7 MB</div>
+            <div class="file-menu">&#8230;</div>
+          </div>
+          <div class="file-row">
+            <div class="file-icon orange">&#128193;</div>
+            <div class="file-name">Work</div>
+            <div class="file-type">Folder</div>
+            <div class="file-size">7 MB</div>
+            <div class="file-menu">&#8230;</div>
+          </div>
         </div>
-      </main>
+
+        <!-- UPLOAD BAR -->
+        <div class="upload-bar">
+          <div class="upload-left">
+            <span class="upload-icon">&#9650;</span>
+            Upload files
+          </div>
+          <span class="upload-chevron">&#8963;</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right-panel">
+      <!-- User card -->
+      <div class="user-card">
+        <div class="user-avatar">&#128100;</div>
+        <div class="user-info">
+          <div class="user-name">Robert Fox</div>
+          <div class="user-email">robert@mail.com</div>
+        </div>
+        <div class="user-chevron">&#8964;</div>
+      </div>
+
+      <!-- Add new -->
+      <button class="add-new-btn">Add new &nbsp;&#43;</button>
+
+      <!-- Storage -->
+      <div class="storage-card">
+        <div class="donut-wrap">
+          <svg class="donut-svg" viewBox="0 0 100 100">
+            <circle class="donut-bg" cx="50" cy="50" r="40" />
+            <circle class="donut-fill" cx="50" cy="50" r="40" />
+          </svg>
+          <div class="donut-label">
+            <div class="donut-pct">25%</div>
+            <div class="donut-used">used</div>
+          </div>
+        </div>
+        <div class="storage-numbers">769 GB <span>/ 1 TB</span></div>
+        <div class="storage-label">Available storage</div>
+      </div>
+
+      <!-- Premium -->
+      <div class="premium-card">
+        <div class="premium-icon-wrap">&#128193;</div>
+        <div class="premium-title">Go Premium</div>
+        <div class="premium-desc">Upgrade space now and get a 15% discount</div>
+      </div>
     </div>
   </body>
 </html>
