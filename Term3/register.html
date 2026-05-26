@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tasker - Edit Profile</title>
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-icon">T</div>
+        <div class="brand-name">Tasker</div>
+      </div>
+
+      <nav class="nav">
+        <div class="nav-item">
+          <span class="nav-icon">&#9638;</span>
+          Overview
+        </div>
+        <div class="nav-item">
+          <span class="nav-icon">&#9998;</span>
+          Tasks
+        </div>
+        <div class="nav-item">
+          <span class="nav-icon">&#128197;</span>
+          Calendar
+        </div>
+      </nav>
+
+      <button class="add-task-btn">&#43; Add task</button>
+
+      <div class="sidebar-bottom">
+        <div class="nav-item active">
+          <span class="nav-icon">&#128100;</span>
+          Account
+        </div>
+        <div class="nav-item">
+          <span class="nav-icon">&#9881;</span>
+          Settings
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <div class="main">
+      <!-- TOPBAR -->
+      <div class="topbar">
+        <div class="search-wrap">
+          <span>&#128269;</span>
+          <input type="text" placeholder="Search something" />
+        </div>
+        <div class="topbar-icon">&#128276;</div>
+        <div class="topbar-icon">&#9881;</div>
+      </div>
+
+      <!-- BODY -->
+      <div class="body">
+        <!-- FORM CARD -->
+        <div class="form-card">
+          <h2>Edit your profile</h2>
+
+          <div class="photo-section">
+            <div class="photo-preview">
+              <div class="photo-placeholder">&#128100;</div>
+            </div>
+            <div class="photo-actions">
+              <p>Upload photo</p>
+              <button class="btn-remove">Remove photo</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" value="Samantha Cartel" />
+          </div>
+
+          <div class="field">
+            <label for="about">About</label>
+            <textarea id="about" placeholder="Anything about you"></textarea>
+          </div>
+
+          <button class="btn-update">Update profile</button>
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="right-panel">
+          <!-- Profile widget -->
+          <div class="profile-widget">
+            <div class="profile-avatar">
+              <div class="profile-avatar-placeholder">&#128100;</div>
+            </div>
+            <div class="profile-name">Samantha Cartel</div>
+            <div class="profile-role">Senior front-end developer at Google</div>
+          </div>
+
+          <!-- Calendar widget -->
+          <div class="calendar-widget">
+            <div class="cal-header">
+              <button class="cal-nav">&#8249;</button>
+              <div class="cal-title">23 June 2022</div>
+              <button class="cal-nav">&#8250;</button>
+            </div>
+            <table class="cal-grid">
+              <thead>
+                <tr>
+                  <th>Mo</th>
+                  <th>Tu</th>
+                  <th>We</th>
+                  <th>Th</th>
+                  <th>Fr</th>
+                  <th class="weekend">Sa</th>
+                  <th class="weekend">Su</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="other-month">30</td>
+                  <td class="other-month">31</td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td class="weekend">4</td>
+                  <td class="weekend">5</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td class="weekend">11</td>
+                  <td class="weekend">12</td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td class="weekend">18</td>
+                  <td class="weekend">19</td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td class="today">23</td>
+                  <td>24</td>
+                  <td class="weekend">25</td>
+                  <td class="weekend">26</td>
+                </tr>
+                <tr>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                  <td class="other-month">1</td>
+                  <td class="weekend other-month">2</td>
+                  <td class="weekend other-month">3</td>
+                </tr>
+                <tr>
+                  <td class="other-month">4</td>
+                  <td class="other-month">5</td>
+                  <td class="other-month">6</td>
+                  <td class="other-month">7</td>
+                  <td class="other-month">8</td>
+                  <td class="weekend other-month">9</td>
+                  <td class="weekend other-month">10</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Recently added -->
+          <div class="recent-widget">
+            <div class="recent-title">Recently added</div>
+            <div class="recent-item">
+              <span class="check-icon">&#10003;</span> Go to a job interview a
+              kigali Inn
+            </div>
+            <div class="recent-item">
+              <span class="check-icon">&#10003;</span> Go to a job interview a
+              kigali Inn
+            </div>
+            <div class="recent-item">
+              <span class="check-icon">&#10003;</span> Go to a job interview a
+              kigali Inn
+            </div>
+            <div class="recent-item">
+              <span class="check-icon">&#10003;</span> Go to a job interview a
+              kigali Inn
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
