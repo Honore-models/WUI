@@ -435,7 +435,7 @@
 
       .cal-grid td.today {
         background: #2563eb;
-        color: #fff !important;
+        color: #fff;
         border-radius: 50%;
         font-weight: 700;
       }
