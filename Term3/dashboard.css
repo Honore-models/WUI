@@ -13,7 +13,7 @@ body {
   overflow: hidden;
 }
 
-/* ── SIDEBAR ── */
+
 .sidebar {
   width: 220px;
   background: #f3f3fb;
@@ -106,7 +106,7 @@ body {
   color: #5b3ef5;
 }
 
-/* ── MAIN ── */
+
 .main {
   flex: 1;
   display: flex;
@@ -116,7 +116,6 @@ body {
   gap: 20px;
 }
 
-/* ── TOPBAR ── */
 .topbar {
   display: flex;
   align-items: center;
@@ -162,7 +161,6 @@ body {
   justify-content: center;
 }
 
-/* ── CONTENT ── */
 .content {
   flex: 1;
   overflow-y: auto;
@@ -175,7 +173,7 @@ body {
   margin-bottom: 14px;
 }
 
-/* ── CATEGORY CARDS ── */
+
 .category-grid {
   display: flex;
   gap: 14px;
@@ -231,7 +229,7 @@ body {
   color: #999;
 }
 
-/* ── RECENT FILES ── */
+
 .recent-list {
   background: #fff;
   border-radius: 16px;
@@ -311,7 +309,7 @@ body {
   letter-spacing: 1px;
 }
 
-/* ── UPLOAD BAR ── */
+
 .upload-bar {
   display: flex;
   align-items: center;
@@ -347,7 +345,6 @@ body {
   color: #aaa;
 }
 
-/* ── RIGHT PANEL ── */
 .right-panel {
   width: 270px;
   flex-shrink: 0;
@@ -358,7 +355,7 @@ body {
   overflow-y: auto;
 }
 
-/* User card */
+
 .user-card {
   background: #fff;
   border: 1px solid #e5e5f5;
@@ -409,7 +406,6 @@ body {
   font-size: 14px;
 }
 
-/* Add new */
 .add-new-btn {
   background: #5b3ef5;
   color: #fff;
@@ -430,7 +426,7 @@ body {
   background: #4a2ee0;
 }
 
-/* Storage widget */
+
 .storage-card {
   background: #fff;
   border: 1px solid #e5e5f5;
@@ -464,7 +460,7 @@ body {
   stroke-width: 12;
   stroke-linecap: round;
   stroke-dasharray: 251.2;
-  stroke-dashoffset: 188.4; /* 75% empty = 25% filled */
+  stroke-dashoffset: 188.4; 
 }
 
 .donut-label {
@@ -504,7 +500,6 @@ body {
   color: #aaa;
 }
 
-/* Premium card */
 .premium-card {
   background: #ede8ff;
   border-radius: 16px;

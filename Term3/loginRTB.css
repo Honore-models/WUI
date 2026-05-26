@@ -1,139 +1,134 @@
 * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 14px;
-        background: #2b6cb0;
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  background: #2b6cb0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-      .card {
-        background: #fff;
-        border-radius: 16px;
-        padding: 48px 52px 40px 52px;
-        width: 420px;
-        text-align: center;
-      }
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 48px 52px 40px 52px;
+  width: 420px;
+  text-align: center;
+}
 
-      /* ── TITLE ── */
-      .login-title {
-        font-size: 20px;
-        font-weight: 700;
-        color: #1e5ab4;
-        letter-spacing: 2px;
-        margin-bottom: 28px;
-      }
+.login-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e5ab4;
+  letter-spacing: 2px;
+  margin-bottom: 28px;
+}
 
-      .logo-area {
-        margin-bottom: 40px;
-      }
+.logo-area {
+  margin-bottom: 40px;
+}
 
-      /* ── FORM ── */
-      .field {
-        margin-bottom: 20px;
-        text-align: left;
-      }
+.field {
+  margin-bottom: 20px;
+  text-align: left;
+}
 
-      .field label {
-        display: block;
-        font-size: 13px;
-        font-weight: 600;
-        color: #2b6cb0;
-        margin-bottom: 6px;
-      }
+.field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2b6cb0;
+  margin-bottom: 6px;
+}
 
-      .field input {
-        width: 100%;
-        border: 1.5px solid #c3d4ec;
-        border-radius: 8px;
-        padding: 11px 14px;
-        font-size: 13px;
-        color: #aaa;
-        outline: none;
-        background: #fff;
-      }
+.field input {
+  width: 100%;
+  border: 1.5px solid #c3d4ec;
+  border-radius: 8px;
+  padding: 11px 14px;
+  font-size: 13px;
+  color: #aaa;
+  outline: none;
+  background: #fff;
+}
 
-      .field input:focus {
-        border-color: #2b6cb0;
-        color: #333;
-      }
+.field input:focus {
+  border-color: #2b6cb0;
+  color: #333;
+}
 
-      .forgot-row {
-        text-align: right;
-        margin-top: 6px;
-      }
+.forgot-row {
+  text-align: right;
+  margin-top: 6px;
+}
 
-      .forgot-row a {
-        font-size: 12.5px;
-        color: #2b6cb0;
-        text-decoration: none;
-      }
+.forgot-row a {
+  font-size: 12.5px;
+  color: #2b6cb0;
+  text-decoration: none;
+}
 
-      .forgot-row a:hover {
-        text-decoration: underline;
-      }
+.forgot-row a:hover {
+  text-decoration: underline;
+}
 
-      /* ── REMEMBER ME ── */
-      .remember-row {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        margin-bottom: 28px;
-      }
+.remember-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 28px;
+}
 
-      .remember-row input[type="checkbox"] {
-        width: 16px;
-        height: 16px;
-        border: 1.5px solid #aaa;
-        border-radius: 3px;
-        cursor: pointer;
-        accent-color: #2b6cb0;
-      }
+.remember-row input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid #aaa;
+  border-radius: 3px;
+  cursor: pointer;
+  accent-color: #2b6cb0;
+}
 
-      .remember-row label {
-        font-size: 13px;
-        color: #555;
-        cursor: pointer;
-      }
+.remember-row label {
+  font-size: 13px;
+  color: #555;
+  cursor: pointer;
+}
 
-      /* ── BUTTON ── */
-      .btn-login {
-        width: 100%;
-        background: #0b60df;
-        color: #fff;
-        border: none;
-        border-radius: 8px;
-        padding: 13px;
-        font-size: 15px;
-        font-weight: 600;
-        cursor: pointer;
-        letter-spacing: 0.5px;
-      }
+.btn-login {
+  width: 100%;
+  background: #0b60df;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 13px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
 
-      .btn-login:hover {
-        background: #2b6cb0;
-      }
+.btn-login:hover {
+  background: #2b6cb0;
+}
 
-      /* ── REGISTER ── */
-      .register-row {
-        margin-top: 18px;
-        font-size: 13px;
-        color: #888;
-      }
+.register-row {
+  margin-top: 18px;
+  font-size: 13px;
+  color: #888;
+}
 
-      .register-row a {
-        color: #2b6cb0;
-        font-weight: 700;
-        text-decoration: none;
-      }
+.register-row a {
+  color: #2b6cb0;
+  font-weight: 700;
+  text-decoration: none;
+}
 
-      .register-row a:hover {
-        text-decoration: underline;
-      }
+.register-row a:hover {
+  text-decoration: underline;
+}

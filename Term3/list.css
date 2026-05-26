@@ -132,7 +132,7 @@ body {
   color: #e63946;
 }
 
-/* ── MAIN ── */
+
 .main {
   flex: 1;
   display: flex;
@@ -140,7 +140,7 @@ body {
   overflow: hidden;
 }
 
-/* ── TOPBAR ── */
+
 .topbar {
   background: #fff;
   border-bottom: 1px solid #e2e6ea;
@@ -206,7 +206,6 @@ body {
   cursor: pointer;
 }
 
-/* ── CONTENT ── */
 .content {
   flex: 1;
   padding: 24px;
@@ -221,7 +220,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* ── TABS ── */
 .tabs {
   display: flex;
   align-items: center;
@@ -274,7 +272,6 @@ body {
   border-color: #003580;
 }
 
-/* ── TABLE ── */
 .table-wrapper {
   background: #fff;
   border-radius: 10px;
